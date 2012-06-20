@@ -11,15 +11,31 @@ using Microsoft.Xna.Framework.Media;
 
 namespace SEngine_Sample
 {
+#if WINDOWS || XBOX
+	static class Program
+	{
+		/// <summary>
+		/// The main entry point for the application.
+		/// </summary>
+		static void Main(string[] args)
+		{
+			using (Main game = new Main())
+			{
+				game.Run();
+			}
+		}
+	}
+#endif
+
 	/// <summary>
 	/// This is the main type for your game
 	/// </summary>
-	public class Game1 : Microsoft.Xna.Framework.Game
+	public class Main : Microsoft.Xna.Framework.Game
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public Game1()
+		public Main()
 		{
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
