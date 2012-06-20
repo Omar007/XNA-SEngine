@@ -92,8 +92,67 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JitterPhysics\Collision\CollisionIsland.cs" />
+    <Compile Include="JitterPhysics\Collision\CollisionSystem.cs" />
+    <Compile Include="JitterPhysics\Collision\CollisionSystemBrute.cs" />
+    <Compile Include="JitterPhysics\Collision\CollisionSystemPersistentSAP.cs" />
+    <Compile Include="JitterPhysics\Collision\CollisionSystemSAP.cs" />
+    <Compile Include="JitterPhysics\Collision\DynamicTree.cs" />
+    <Compile Include="JitterPhysics\Collision\GJKCollide.cs" />
+    <Compile Include="JitterPhysics\Collision\IslandManager.cs" />
+    <Compile Include="JitterPhysics\Collision\Octree.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\BoxShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\CapsuleShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\CompoundShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\ConeShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\ConvexHullShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\CylinderShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\MinkowskiSumShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\Multishape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\Shape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\SphereShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\TerrainShape.cs" />
+    <Compile Include="JitterPhysics\Collision\Shapes\TriangleMeshShape.cs" />
+    <Compile Include="JitterPhysics\Collision\XenoCollide.cs" />
+    <Compile Include="JitterPhysics\DataStructures\Hashset.cs" />
+    <Compile Include="JitterPhysics\DataStructures\ReadOnlyHashset.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Arbiter.cs" />
+    <Compile Include="JitterPhysics\Dynamics\ArbiterMap.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Constraint.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Constraints\FixedAngle.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Constraints\PointOnLine.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Constraints\PointOnPoint.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Constraints\PointPointDistance.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Constraints\SingleBody\FixedAngle.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Constraints\SingleBody\PointOnLine.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Constraints\SingleBody\PointOnPoint.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Contact.cs" />
+    <Compile Include="JitterPhysics\Dynamics\IConstraint.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Joints\HingeJoint.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Joints\Joint.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Joints\PrismaticJoint.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Material.cs" />
+    <Compile Include="JitterPhysics\Dynamics\RigidBody.cs" />
+    <Compile Include="JitterPhysics\Dynamics\SoftBody.cs" />
+    <Compile Include="JitterPhysics\IDebugDraw.cs" />
+    <Compile Include="JitterPhysics\LinearMath\JBBox.cs" />
+    <Compile Include="JitterPhysics\LinearMath\JConvexHull.cs" />
+    <Compile Include="JitterPhysics\LinearMath\JMath.cs" />
+    <Compile Include="JitterPhysics\LinearMath\JMatrix.cs" />
+    <Compile Include="JitterPhysics\LinearMath\JQuaternion.cs" />
+    <Compile Include="JitterPhysics\LinearMath\JVector.cs" />
+    <Compile Include="JitterPhysics\ResourcePool.cs" />
+    <Compile Include="JitterPhysics\ThreadManager.cs" />
+    <Compile Include="JitterPhysics\World.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cainav\" />
+    <Folder Include="Graphics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JitterPhysics\Copyright.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

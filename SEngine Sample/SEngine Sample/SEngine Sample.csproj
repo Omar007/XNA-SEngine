@@ -116,8 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SEngine SampleContent\SEngine SampleContent.contentproj">
-      <Name>SEngine_SampleContent</Name>
+      <Name>SEngine SampleContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{1569DF9F-EEC7-44FE-8B82-F8BB63ADFD9A}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
