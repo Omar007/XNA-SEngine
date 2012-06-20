@@ -92,6 +92,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cainav\MeshToNavmesh.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\PlayerObject.cs" />
+    <Compile Include="GameWorld\World.cs" />
+    <Compile Include="Graphics\IRenderable.cs" />
+    <Compile Include="Input\InputAction.cs" />
+    <Compile Include="Input\InputManager.cs" />
     <Compile Include="JitterPhysics\Collision\CollisionIsland.cs" />
     <Compile Include="JitterPhysics\Collision\CollisionSystem.cs" />
     <Compile Include="JitterPhysics\Collision\CollisionSystemBrute.cs" />
@@ -147,10 +154,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Cainav\" />
-    <Folder Include="Graphics\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="JitterPhysics\Copyright.txt" />
   </ItemGroup>
