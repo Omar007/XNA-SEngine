@@ -98,11 +98,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseObject.cs" />
+    <Compile Include="Base\GameData.cs" />
     <Compile Include="Cainav\MeshToNavmesh.cs" />
-    <Compile Include="GameObjects\GameObject.cs" />
-    <Compile Include="GameObjects\PlayerObject.cs" />
-    <Compile Include="GameWorld\World.cs" />
-    <Compile Include="Graphics\IRenderable.cs" />
+    <Compile Include="Helpers\HelperFunctions.cs" />
     <Compile Include="Input\InputAction.cs" />
     <Compile Include="Input\InputManager.cs" />
     <Compile Include="JitterPhysics\Collision\CollisionIsland.cs" />
@@ -157,6 +156,7 @@
     <Compile Include="JitterPhysics\ResourcePool.cs" />
     <Compile Include="JitterPhysics\ThreadManager.cs" />
     <Compile Include="JitterPhysics\World.cs" />
+    <Compile Include="Screens\Console.cs" />
     <Compile Include="SEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
