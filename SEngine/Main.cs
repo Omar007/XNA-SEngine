@@ -10,3 +10,5 @@ namespace SEngine
 		}
 	}
 }
+
+//EventLog.WriteEntry("SEngine", new ArgumentException("Missing Argument!").Message, EventLogEntryType.Error);
