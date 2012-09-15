@@ -7,22 +7,6 @@ namespace SEngine
 {
 	public class SEngine
 	{
-		private static SEngine sEngine;
-		internal static SEngine SEngine { get { return sEngine; } }
-
-		public static SEngine CreateInstance(Game game, ContentManager contentManager, ContentManager levelContentManager)
-		{
-			if (sEngine == null)
-			{
-				sEngine = new SEngine(game, contentManager, levelContentManager);
-			}
-			else
-			{
-				sEngine.gameData = new GameData(game.GraphicsDevice, contentManager, levelContentManager);
-			}
-			return sEngine;
-		}
-
 		#region Fields
 		private GameData gameData;
 
@@ -35,7 +19,7 @@ namespace SEngine
 		public SimpleConsole Console { get { return console; } }
 		#endregion
 
-		private SEngine(Game game, ContentManager contentManager, ContentManager levelContentManager)
+		public SEngine(Game game, ContentManager contentManager, ContentManager levelContentManager)
 		{
 			gameData = new GameData(game.GraphicsDevice, contentManager, levelContentManager);
 
