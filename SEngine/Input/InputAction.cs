@@ -11,12 +11,15 @@ namespace SEngine.Input
 		private readonly Keys? key;
 		private readonly bool newPressOnly;
 
+		private readonly ButtonPress buttonTest;
+		private readonly KeyPress keyTest;
+
 		// These delegate types map to the methods on InputState. We use these to simplify the evalute method
 		// by allowing us to map the appropriate delegates and invoke them, rather than having two separate code paths.
 		private delegate bool ButtonPress(Buttons button, PlayerIndex? controllingPlayer, out PlayerIndex player);
 		private delegate bool KeyPress(Keys key, PlayerIndex? controllingPlayer, out PlayerIndex player);
 
-		public InputAction(string name, PlayerIndex? controllingPlayer, Buttons? button, Keys? key, bool newPressOnly)
+		public InputAction(string name, PlayerIndex? controllingPlayer, Buttons? button, Keys? key, bool newPressOnly, InputManager state)
 		{
 			this.name = name;
 			this.controllingPlayer = controllingPlayer;
@@ -25,13 +28,8 @@ namespace SEngine.Input
 			this.key = key;
 
 			this.newPressOnly = newPressOnly;
-		}
 
-		public bool Evaluate(InputManager state)
-		{
 			// Figure out which delegate methods to map from the state which takes care of our "newPressOnly" logic
-			ButtonPress buttonTest;
-			KeyPress keyTest;
 			if (newPressOnly)
 			{
 				buttonTest = state.IsNewButtonPress;
@@ -42,7 +40,10 @@ namespace SEngine.Input
 				buttonTest = state.IsButtonPressed;
 				keyTest = state.IsKeyPressed;
 			}
+		}
 
+		public bool Evaluate()
+		{
 			PlayerIndex player;
 
 			if (button.HasValue && buttonTest(button.Value, controllingPlayer, out player))
