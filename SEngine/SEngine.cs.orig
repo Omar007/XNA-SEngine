@@ -1,0 +1,49 @@
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using SEngine.Base;
+using SEngine.Screens;
+
+namespace SEngine
+{
+	public class SEngine
+	{
+<<<<<<< HEAD
+		public static GameData GameData { get; private set; }
+
+=======
+>>>>>>> 936bfb1670b87067c88edec852132d4559155a49
+		#region Fields
+		private SimpleConsole console;
+		#endregion
+
+		#region Properties
+		public SimpleConsole Console { get { return console; } }
+		#endregion
+
+<<<<<<< HEAD
+		public SEngine(Game game)
+			: this(game, game.Content, game.Content)
+		{
+		}
+
+=======
+>>>>>>> 936bfb1670b87067c88edec852132d4559155a49
+		public SEngine(Game game, ContentManager contentManager, ContentManager levelContentManager)
+		{
+			GameData = new GameData(game.GraphicsDevice, contentManager, levelContentManager);
+
+			console = new SimpleConsole(game);
+			game.Components.Add(console);
+		}
+
+		//public void update(GameTime gameTime)
+		//{
+		//    console.Update(gameTime);
+		//}
+
+		//public void draw(GameTime gameTime)
+		//{
+		//    console.Draw(gameTime);
+		//}
+	}
+}
