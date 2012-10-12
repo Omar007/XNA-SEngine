@@ -1,0 +1,14 @@
+Content\LightMeshes\cone.xnb
+Content\LightMeshes\sphere.xnb
+Content\Fonts\console.xnb
+Content\Textures\default_diffuse.xnb
+Content\Textures\default_emissive.xnb
+Content\Textures\default_normal.xnb
+Content\Textures\default_specular.xnb
+Content\Textures\random.xnb
+Content\Shaders\ClearGBuffer.xnb
+Content\Shaders\DownsampleDepth.xnb
+Content\Shaders\LightingLPP.xnb
+Content\Shaders\LPPMainEffect.xnb
+Content\Shaders\ReconstructDepth.xnb
+Content\Shaders\skybox.xnb

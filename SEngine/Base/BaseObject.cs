@@ -7,11 +7,11 @@ namespace SEngine.Base
 	public abstract class BaseObject
 	{
 		#region Fields
-		//public const long flag1 = 0x00000001;
+		public const ulong flag1 = 0x00000001;
 
-		private Guid guid;
+		private Guid guid = Guid.Empty;
 
-		private long flags;
+		private ulong flags = 0;
 		#endregion
 
 		#region Properties
@@ -29,7 +29,7 @@ namespace SEngine.Base
 
 		[ContentSerializerIgnore]
 		[Browsable(false)]
-		public long Flags
+		public ulong Flags
 		{
 			get { return flags; }
 			set { flags = value; }
@@ -42,7 +42,7 @@ namespace SEngine.Base
 			flags = 0;
 		}
 
-		public void SetFlag(long flag, bool enabled)
+		public void SetFlag(ulong flag, bool enabled)
 		{
 			if (enabled)
 				flags |= flag;
@@ -50,7 +50,7 @@ namespace SEngine.Base
 				flags &= ~flag;
 		}
 
-		public bool HasFlag(long flag)
+		public bool HasFlag(ulong flag)
 		{
 			return (flags & flag) != 0;
 		}
