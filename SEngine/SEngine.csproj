@@ -102,26 +102,6 @@
     <Compile Include="Base\GameData.cs" />
     <Compile Include="Cainav\MeshToNavmesh.cs" />
     <Compile Include="Helpers\HelperFunctions.cs" />
-    <Compile Include="Connectivity\IRC\Consts.cs" />
-    <Compile Include="Connectivity\IRC\EventArgs.cs" />
-    <Compile Include="Connectivity\IRC\Exceptions.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\BanInfo.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\Channel.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\ChannelInfo.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\ChannelUser.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\Delegates.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\EventArgs.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\IrcClient.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\IrcMessageData.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\IrcUser.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\NonRfcChannel.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\NonRfcChannelUser.cs" />
-    <Compile Include="Connectivity\IRC\IrcClient\WhoInfo.cs" />
-    <Compile Include="Connectivity\IRC\IrcCommands\IrcCommands.cs" />
-    <Compile Include="Connectivity\IRC\IrcCommands\Rfc2812.cs" />
-    <Compile Include="Connectivity\IRC\IrcConnection\Delegates.cs" />
-    <Compile Include="Connectivity\IRC\IrcConnection\EventArgs.cs" />
-    <Compile Include="Connectivity\IRC\IrcConnection\IrcConnection.cs" />
     <Compile Include="Functions\NumberGenerators.cs" />
     <Compile Include="Input\InputAction.cs" />
     <Compile Include="Input\InputManager.cs" />
@@ -186,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="JitterPhysics\Copyright.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Graphics\Renderer\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
