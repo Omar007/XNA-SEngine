@@ -100,6 +100,7 @@
   <ItemGroup>
     <Compile Include="Base\BaseObject.cs" />
     <Compile Include="Base\GameData.cs" />
+    <Compile Include="Base\GameObject.cs" />
     <Compile Include="Cainav\MeshToNavmesh.cs" />
     <Compile Include="Helpers\HelperFunctions.cs" />
     <Compile Include="Functions\NumberGenerators.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="JitterPhysics\Dynamics\IConstraint.cs" />
     <Compile Include="JitterPhysics\Dynamics\Joints\HingeJoint.cs" />
     <Compile Include="JitterPhysics\Dynamics\Joints\Joint.cs" />
+    <Compile Include="JitterPhysics\Dynamics\Joints\LimitedHingeJoint.cs" />
     <Compile Include="JitterPhysics\Dynamics\Joints\PrismaticJoint.cs" />
     <Compile Include="JitterPhysics\Dynamics\Material.cs" />
     <Compile Include="JitterPhysics\Dynamics\RigidBody.cs" />
@@ -165,7 +167,11 @@
     <None Include="SEngine.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="JitterPhysics\Copyright.txt" />
+    <ProjectReference Include="..\SEngine Content\SEngine Content.contentproj">
+      <Project>{E9179481-E955-4A46-B8C3-5010AB2265ED}</Project>
+      <Name>SEngine Content %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Graphics\Renderer\" />

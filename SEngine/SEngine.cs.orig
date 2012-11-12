@@ -7,8 +7,11 @@ namespace SEngine
 {
 	public class SEngine
 	{
+<<<<<<< HEAD
 		public static GameData GameData { get; private set; }
 
+=======
+>>>>>>> 936bfb1670b87067c88edec852132d4559155a49
 		#region Fields
 		private SimpleConsole console;
 		#endregion
@@ -17,11 +20,14 @@ namespace SEngine
 		public SimpleConsole Console { get { return console; } }
 		#endregion
 
+<<<<<<< HEAD
 		public SEngine(Game game)
 			: this(game, game.Content, game.Content)
 		{
 		}
 
+=======
+>>>>>>> 936bfb1670b87067c88edec852132d4559155a49
 		public SEngine(Game game, ContentManager contentManager, ContentManager levelContentManager)
 		{
 			GameData = new GameData(game.GraphicsDevice, contentManager, levelContentManager);
